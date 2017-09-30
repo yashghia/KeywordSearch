@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teja.homework03.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add words to search:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Add words to search:" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginTop="30dp"
+    android:id="@+id/scrollView2">
+
+    <LinearLayout
+        android:id="@+id/newLayoutTester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:id="@+id/horizontalLayout">-->
+
+        <!--<EditText-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/button4"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@drawable/add"-->
+        <!--android:onClick="createDynamicUI"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</ScrollView>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="Match Cases" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/checkbox"
+        android:layout_alignStart="@+id/checkbox"
+        android:layout_below="@+id/checkbox"
+        android:layout_marginTop="13dp"
+        android:text="Search"
+        android:textSize="18sp"
+        android:onClick="searchFunction"/>
+
+<!--    <ProgressBar
+        android:id="@+id/determinateBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <ProgressBar
+        android:id="@+id/determinateBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
